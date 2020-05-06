@@ -1,21 +1,117 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <meta charset="utf-8">
         <title>TkNyMa</title>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="scss/main.css">
+        <script src="https://kit.fontawesome.com/bd8bf05d70.js" crossorigin="anonymous"></script>
+        <style>
+          body{
+            background: #778C7A;
+          }
+          #plant-mom{
+            width: 100%;
+            height: 600px;
+          }
+          #plant-mom > div{
+            display: inline-block;
+          }
+          #plant-mom .panel-one{
+            width: 25%;
+            height: 100%;
+            margin-left: 25px;
+          }
+          #plant-mom .panel-one .title h1{
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 1.3;
+            padding: 50px 0;
+          }
+          #plant-mom .panel-one .title h1 span{
+            color: #F5F5F5;
+          }
+
+          #plant-mom .panel-two{
+            width: 33%;
+            height: 100%;
+          }
+
+          #plant-mom .panel-two img{
+            margin: 10px;
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
+            opacity: 0.5;
+          }
+          #plant-mom .panel-three{
+            width: 33%;
+            height: 100%;
+          }
+          #plant-mom .panel-three p{
+            font-size: 18px;
+            text-align: left;
+            line-height: 1.5;
+            padding-top: 100px;
+            margin: 0;
+          }
+          #plant-mom .panel-three p span{
+            color: #F5F5F5;
+          }
+
+        </style>
     </head>
     <body>
       <header id="top">
         <div class="hdr-container">
           <div class="logo">
-            <img src="" alt="written logo">
+            <a href="index.html">
+            <img src="img/lily-logo.png" alt="written logo">
+            </a>
           </div>
           <nav>
             <ul>
-              <li><a href="#">Shoes</a></li>
-              <li><a href="#">Makeup</a></li>
-              <li><a href="#">Plants</a></li>
+              <li>My interests include &rarr;</li>
+              <li><a href="shoes.html">Shoes</a></li>
+              <li><a href="makeup.html">Makeup</a></li>
+              <li><a href="plants.html">Plants</a></li>
             </ul>
           </nav>
          </div>
       </header>
-</html>
+      <div class="quarantine-note">
+        <div class="alert alert-warning" role="alert">
+          Don't overwater your plants! Remember to let light in for a few hours!
+        </div>
+      </div>
+      <section id="plant-mom">
+        <div class="panel-one">
+          <div class="title">
+            <h1><span>#StayInside</span><br>with Plants</h1>
+          </div>
+        </div>
+        <div class="panel-two">
+            <img src="img/melo.png" alt="melo sniffing lily">
+        </div>
+        <div class="panel-three">
+          <div class="plant-inside">
+            <p>Funny story- before the shutdown I made sure I stopped at the office one last time to grab my desk plants. <br>Bringing home my work plants took up so much space that I ended up buying a wire rack from Amazon to make room. <br>I admit that being couped up in the house is getting to be a drag, but having plants to tend to has been an ongoing incentive to <span>a)get out of bed</span>, and <span>b)keep track of what day it is</span> </p>
+          </div>
+        </div>
+      </section>
+      <footer id="bottom">
+        <div class="ft-container">
+          <div class="trdmrk">
+            <p>CS50's Web Programming with Python and JavaScript| TkNyMa| project0 04.20.2020</p>
+            <ul>
+              <li><img src="img/twt64.png" alt=""></li>
+              <li><img src="img/ig64.png" alt=""></li>
+              <li><img src="img/fb64.png" alt=""></li>
+          </div>
+            </ul>
+        </div>
+      </footer>
+    </body>
+  </html>

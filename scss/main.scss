@@ -3,7 +3,151 @@ $ever: #112602;
 $olive: #3E5903;
 $lime: #507303;
 $sage: #778C7A;
+$lily: #F1F1F1;
 
-html, body{
-  background: $olive;
+%lookat{
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid $lily;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 20px;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: $lily;
+  width: 1280px;
+  margin: 0;
+  overflow: auto;
+
+}
+#top{
+  display: inline-block;
+  background: $lily;
+  width: 100%;
+  height: 75px;
+}
+  .logo{
+    float: left;
+    img{
+      height: 75px;
+      width: 150px;
+      padding-left: 15px;
+      border-radius: 50%;
+    }
+    }
+    nav{
+      float: right;
+
+      ul{
+        li{
+          display: inline-block;
+          padding: 10px 20px;
+          a{
+            text-align: right;
+            text-decoration: none;
+            color: $dark;
+            font-weight: 600;
+          }
+          a:hover{
+            color: $lime;
+          }
+        }
+      }
+    }
+    #top{
+      clear: both;
+    }
+#content-area{
+  display: inline-block;
+  height: 615px;
+      .lft-panel{
+        //position: absolute;
+        //top: 75px;
+        //bottom: 0;
+        float: left;
+        height: 100%;
+        width: 30%;
+        background: $dark;
+        color: $lily;
+        margin: 0;
+        padding: 30px;
+      }
+      .lft-container{
+        width: 100%;
+      }
+      h1{
+        font-size: 30px;
+      }
+      p{
+        line-height: 1.5;
+      }
+      .shoe-btn{
+        @extend %lookat;
+        background-color: $lime;
+      }
+      .mkup-btn{
+        @extend %lookat;
+        background-color: $olive;
+      }
+      .plnt-btn{
+        @extend %lookat;
+        background-color: $sage;
+      }
+      .rgt-panel{
+        //position: relative;
+        float: right;
+        width: 70%;
+        .home-img{
+          img{
+            float: left;
+            width: 50%;
+            height: 615px;
+          }
+        }
+      }
+    }
+    #content-area{
+      clear: both;
+    }
+#bottom{
+  display: inline-block;
+  background: $lily;
+  width: 100%;
+  height: 50px;
+  .ft-container{
+    width: 100%;
+    .trdmrk{
+      display: inline-block;
+      font-weight: 400;
+      margin: 0;
+      p{
+        display: inline-block;
+        text-align: right;
+        padding-left: 200px;
+        margin: 0;
+      }
+      }
+        ul{
+          display: inline-block;
+          margin: 0;
+          padding-left: 30px;
+          li{
+            position: relative;
+            top:11px;
+            display: inline-block;
+            img{
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+    }
+  }
+#bottom{
+  clear: both;
 }
