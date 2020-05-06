@@ -24,30 +24,49 @@
             padding: 0;
             border: 3px solid #F1F1F1;
           }
-          .row .col-4 img{
+          .row .col-md-4  img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             height: 300px;
             width: 375px;
           }
           /*//////OTHER DEVICES/////*/
           /*//////TABLET/////*/
           @media only screen and (max-width: 800px) {
-  body {
-    background-color: lightblue;
-  }
   #snkrs{
     width: 100%;
     padding: 50px 0;
   }
-
-}
-          /*//////MOBILE/////*/
-          @media only screen and (max-width: 400px) {
-  body {
-    background-color: pink;
+  .row .col-md-4  img{
+    height: 225px;
+    width: 250px;
   }
 }
+          /*//////MOBILE/////*/
+          @media only screen and (max-width: 540px) {
+  .my-collection{
+    text-align: center;
+    font-weight: 600;
+  }
+  .my-collection h1{
+    font-size: 100px;
+  }
+  .my-collection p{
+    font-size: 30px;
+  }
 
+
+  .row .col-6  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    width: 625px;
+  }
+}
         </style>
+
     </head>
     <body>
       <header id="top">
@@ -74,22 +93,22 @@
         </div>
         <div class="container">
   <div class="row">
-    <div class="col-4">
+    <div class="col-md-4  col-6">
       <img src="img/dmp.jpg" alt="DMP">
     </div>
-    <div class="col-4">
+    <div class="col-md-4  col-6">
       <img src="img/cp1.jpg" alt="CP1">
     </div>
-    <div class="col-4">
+    <div class="col-md-4  col-6">
       <img src="img/lsw.jpg" alt="LSW">
     </div>
-    <div class="col-4">
+    <div class="col-md-4  col-6">
       <img src="img/zvg.jpg" alt="ZVG">
     </div>
-    <div class="col-4">
+    <div class="col-md-4  col-6">
       <img src="img/mem.jpg" alt="MEM">
     </div>
-    <div class="col-4">
+    <div class="col-md-4  col-6">
       <img src="img/ot3.jpg" alt="OT3">
     </div>
 
